@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Finishers | The Taste of Royalty in Painting & Design</title>
+
+    <!-- Bootstrap CSS (CDN) - CORRECTED integrity attribute -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS (Your main styling file) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts (CDN - will load if online) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons (CDN - will load if online) - CORRECTED integrity attribute -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlalDLsXzL3h5S02h4W2O9pXQ5lXyFf2xG4Z5J5R5O5F5+0N5J5P5K5I5L5M5N5O5Q5R5S5T5U5V5W5X5Y5Z5a5b5c5d5e5f5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- Navbar: Responsive navigation bar fixed at the top -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Royal Finishers
+                <!-- Optional: Replace text with your logo image later: <img src="images/logo.png" alt="Royal Finishers Logo" height="30"> -->
+            </a>
+            <!-- Navbar Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <!-- Call to Action Button in Navbar -->
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning" href="contact.html">Get a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Hero Section: Main visual impact with headline and CTAs -->
+   <header class="hero-section text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Royal Finishers: <br class="d-md-none">The Taste of Royalty in Painting & Design</h1>
+            <p class="lead mb-4">Transforming homes and businesses with impeccable finishes and artistic vision.</p>
+            <a href="contact.html" class="btn btn-warning btn-lg me-3">Get a Free Quote Now</a>
+            <a href="portfolio.html" class="btn btn-outline-light btn-lg">View Our Portfolio</a>
+        </div>
+    </header>
+
+
+    <!-- About Us Snippet Section: Brief introduction to the company -->
+    <section id="about-us-snippet" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                    <!-- Placeholder image for the About Us section -->
+                    <img src="images/about-us-placeholder.jpg" class="img-fluid rounded shadow-sm" alt="About Royal Finishers">
+                </div>
+                <div class="col-md-6 order-md-1 text-center text-md-start">
+                    <h2 class="display-4 fw-bold mb-4">About Royal Finishers</h2>
+                    <p class="lead mb-4">
+                        Royal Finishers is dedicated to transforming spaces with unparalleled painting and design expertise.
+                        With years of experience, our team of skilled artisans prides itself on delivering high-quality finishes
+                        and personalized service that brings your vision to life.
+                    </p>
+                    <p>
+                        We believe in the power of color and design to create environments that inspire and delight.
+                        From residential homes to commercial properties, we handle every project with precision, passion, and a commitment to excellence.
+                    </p>
+                    <a href="about.html" class="btn btn-primary btn-lg mt-3">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Snippet Section -->
+
+    <!-- Services Highlight Section: Showcase key service categories -->
+    <section id="services-highlight" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <!-- Placeholder image for Painting Services -->
+                        <img src="images/service-painting.jpg" class="card-img-top" alt="Painting Services">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Professional Painting</h3>
+                            <p class="card-text">Expert interior and exterior painting, including specialized finishes and custom color matching.</p>
+                            <a href="services.html" class="btn btn-outline-primary mt-3">View Painting</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <!-- Placeholder image for Design Services -->
+                        <img src="images/service-design.jpg" class="card-img-top" alt="Design Services">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Creative Design</h3>
+                            <p class="card-text">From wallpaper installation to custom wall art and decorative finishes, we bring your vision to life.</p>
+                            <a href="services.html" class="btn btn-outline-primary mt-3">View Design</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 d-flex flex-column justify-content-center align-items-center p-4">
+                        <!-- Example icon using Font Awesome -->
+                        <i class="fas fa-hammer fa-4x text-primary mb-3 mt-4"></i>
+                        <div class="card-body text-center w-100">
+                            <h3 class="card-title fw-bold">Specialized Finishes & More</h3>
+                            <p class="card-text">Beyond painting and design, we offer Wall Screeding, P.O.P., Industrial Cleaning, and Fumigation.</p>
+                            <a href="services.html" class="btn btn-outline-primary mt-3">All Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Highlight Section -->
+
+    <!-- Portfolio Showcase Section: Display a few recent projects -->
+    <section id="portfolio-showcase" class="py-5">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-5">Our Recent Work</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <!-- Placeholder image for Project 1 -->
+                        <img src="images/portfolio-1.jpg" class="card-img-top" alt="Project 1: Modern Living Room">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Modern Living Room</h3>
+                            <p class="card-text small">Residential Painting | Lagos, Nigeria</p>
+                            <p class="card-text">A harmonious blend of colors and finishes for a modern family home.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <!-- Placeholder image for Project 2 -->
+                        <img src="images/portfolio-2.jpg" class="card-img-top" alt="Project 2: Elegant Dining Area">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Elegant Dining Area</h3>
+                            <p class="card-text small">Interior Design | Victoria Island, Lagos</p>
+                            <p class="card-text">Subtle textures and calming colors for a sophisticated feel, enhancing the dining experience.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <!-- Placeholder image for Project 3 -->
+                        <img src="images/portfolio-3.jpg" class="card-img-top" alt="Project 3: Commercial Office Space">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Commercial Office Space</h3>
+                            <p class="card-text small">Commercial Painting | Abuja, Nigeria</p>
+                            <p class="card-text">A professional and inspiring environment designed for productivity and aesthetic appeal.</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <a href="portfolio.html" class="btn btn-warning btn-lg">View All Projects</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Showcase Section -->
+
+    <!-- New: Design Inspiration with LLM Feature -->
+    <section id="design-inspiration" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-4">✨ Get Design & Color Inspiration</h2>
+            <p class="lead mb-4">
+                Describe your vision or the space you want to transform, and our AI will suggest unique color palettes and design styles.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="mb-3">
+                        <textarea class="form-control rounded-3" id="inspirationInput" rows="4" placeholder="e.g., 'A cozy living room with warm, inviting colors for a modern farmhouse style.' or 'A vibrant, energetic space for a creative studio.'"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg mt-3" id="getInspirationBtn">✨ Generate Inspiration</button>
+                    <div id="inspirationOutput" class="llm-suggestions-box mt-4 d-none text-start"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Design Inspiration Section -->
+
+    <!-- Testimonials Section: Carousel of client feedback -->
+    <section id="testimonials" class="py-5">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-5">What Our Clients Say</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- Placeholder for client avatar -->
+                                <img src="images/client-avatar.jpg" class="rounded-circle mb-3" alt="Client Avatar" width="100" height="100">
+                                <p class="lead fst-italic">"Royal Finishers exceeded all our expectations! Their attention to detail and artistic touch transformed our home beautifully. Truly the taste of royalty!"</p>
+                                <footer class="blockquote-footer text-dark">Jane Doe, Homeowner</footer>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/client-avatar.jpg" class="rounded-circle mb-3" alt="Client Avatar" width="100" height="100">
+                                <p class="lead fst-italic">"Professional, efficient, and incredibly talented. Our office space has never looked better. Royal Finishers delivered beyond what we imagined. Highly recommend!"</p>
+                                <footer class="blockquote-footer text-dark">John Smith, Business Owner</footer>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/client-avatar.jpg" class="rounded-circle mb-3" alt="Client Avatar" width="100" height="100">
+                                <p class="lead fst-italic">"Their fumigation service was thorough and effective, and the painting job was flawless. A comprehensive solution provider for property needs."</p>
+                                <footer class="blockquote-footer text-dark">Local Property Manager</footer>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- Call to Action Section -->
+    <section id="cta-bottom" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="display-4 fw-bold mb-4">Ready for a Royal Transformation?</h2>
+            <p class="lead mb-5">Contact us today for a free consultation and let us bring your vision to life with impeccable finishes.</p>
+            <a href="contact.html" class="btn btn-warning btn-lg">Get Your Free Quote</a>
+        </div>
+    </section>
+    <!-- End Call to Action Section -->
+
+    <!-- Footer: Site information and social links -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-warning">Royal Finishers</h5>
+                    <p class="small mb-0">Transforming spaces, delighting clients.</p>
+                    <p class="small mb-0">Nigeria</p>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <ul class="list-unstyled d-flex justify-content-center m-0">
+                        <li class="mx-2"><a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="mx-2"><a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mx-2"><a href="https://wa.me/2347089532159" class="text-white" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="mx-2"><a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mx-2"><a href="#" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="small mb-0">Contact: <br> 07089532159, 08058350357, 09056984156</p>
+                    <p class="small mb-0">Email: festusogheneakpohobor44@gmail.com</p>
+                    <p class="small mb-0">&copy; <span id="currentYearFooter"></span> Royal Finishers. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS (CDN) - CORRECTED integrity attribute -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom JS (LLM functionality added here) -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

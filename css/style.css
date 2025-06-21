@@ -1,0 +1,539 @@
+/* General Body and Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 56px; /* Adjust for fixed-top navbar height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.lead {
+    font-weight: 300;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffc107 !important; /* Warning yellow for brand */
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75) !important; /* Lighter white for links */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffc107 !important; /* Yellow on hover/active */
+}
+
+.navbar-nav .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-nav .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background-color: #343a40; /* Dark background */
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, 0.75);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #495057; /* Slightly lighter dark on hover */
+    color: #ffc107; /* Yellow text on hover */
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section (Homepage) */
+.hero-section {
+    background-image: url('../images/hero-bg.jpg'); /* Main hero image */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 80vh; /* Make it tall */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1;
+}
+
+.hero-section > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+}
+
+section h2.display-4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* About Us Snippet Section */
+#about-us-snippet img {
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Services Highlight Section */
+#services-highlight .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures image corners match card */
+}
+
+#services-highlight .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+#services-highlight .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#services-highlight .card-body {
+    padding: 2rem;
+}
+
+#services-highlight .card-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Portfolio Showcase Section */
+#portfolio-showcase .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+#portfolio-showcase .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+#portfolio-showcase .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#portfolio-showcase .card-body {
+    padding: 1.5rem;
+}
+
+#portfolio-showcase .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f8f9fa; /* Light background for testimonials */
+}
+
+#testimonials .carousel-item {
+    padding: 20px;
+}
+
+#testimonials .rounded-circle {
+    border: 3px solid #ffc107; /* Yellow border for avatar */
+}
+
+#testimonials .lead {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #555;
+}
+
+#testimonials .blockquote-footer {
+    font-size: 0.9em;
+    margin-top: 1rem;
+}
+
+/* Call to Action Section (Bottom of Homepage and other pages) */
+#cta-bottom {
+    background-color: #343a40; /* Dark background */
+    color: #fff;
+}
+
+#cta-bottom .display-4 {
+    color: #ffc107; /* Yellow heading */
+}
+
+/* Footer */
+footer {
+    background-color: #212529; /* Even darker for footer */
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+footer .fab {
+    font-size: 1.5rem; /* Default size for footer icons */
+}
+
+/* --- Page Header Styling (for inner pages like About Us, Services, Portfolio, Contact) --- */
+/* This is a general page-header style, contact/portfolio have specific overrides */
+.page-header {
+    background-image: url('../images/page-header-bg.jpg'); /* Default image for page headers */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 40vh; /* Shorter than homepage hero */
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1;
+}
+
+.page-header > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Specific styling for the Services page header */
+.page-header-services {
+    background-image: url('../images/services-page-hero.jpg'); /* Image for services header */
+}
+
+/* Specific styling for the Portfolio page header */
+.page-header-portfolio {
+    background-image: url('../images/portfolio-page-hero.jpg'); /* Image for portfolio header */
+}
+
+/* Specific styling for the Contact page header */
+.page-header-contact {
+    background-image: url('../images/contact-page-header-bg.jpg'); /* Image for contact header */
+}
+
+
+/* Map specific styling (for contact.html) */
+.map-container {
+    height: 400px; /* Fixed height for the map iframe */
+    width: 100%;
+    border: 0; /* Remove default iframe border */
+    border-radius: 8px; /* Rounded corners for the map */
+    overflow: hidden; /* Ensure rounded corners are applied */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Styling for bigger and more spacious social icons (for contact.html) */
+/* These target icons in the main content area */
+#contact-content .list-unstyled.d-flex .fab {
+    font-size: 2.5rem; /* Increased icon size */
+    margin-right: 1.5rem; /* More space between icons */
+}
+
+/* Ensure footer icons are also larger */
+footer .list-unstyled a .fab {
+     font-size: 2rem; /* Increased icon size for footer */
+}
+
+/* --- LLM Suggestions Box Styling (for both index.html and contact.html) --- */
+.llm-suggestions-box {
+    background-color: #f8f9fa; /* Light background for the box */
+    border: 1px solid #e2e6ea; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    margin-top: 15px; /* Space above the box */
+    font-size: 0.9em; /* Slightly smaller font for suggestions */
+    color: #555; /* Default text color */
+    min-height: 50px; /* Prevents box from collapsing when empty or loading */
+    display: flex; /* Use flexbox for centering loading text */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+.llm-suggestions-box.loading {
+    border-color: #007bff; /* Blue border during loading */
+}
+.llm-suggestions-box.loading::before {
+    content: "Thinking..."; /* Loading text using pseudo-element */
+    color: #007bff; /* Blue color for loading text */
+    animation: pulse 1.5s infinite; /* Pulsing animation for loading */
+}
+
+/* Keyframe animation for pulsing effect */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* New Design Inspiration Section Styling (specifically for index.html) */
+#design-inspiration .llm-suggestions-box {
+    background-color: #ffffff; /* White background for inspiration box on homepage */
+    color: #333; /* Darker text for readability */
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* --- Specific styling for the Testimonials page header --- */
+.page-header-testimonials {
+    background-image: url('../images/testimonials-page-hero.jpg'); /* Placeholder image for testimonials header */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 40vh; /* Consistent height for inner page headers */
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Ensure the overlay is present for readability on header */
+.page-header-testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1;
+}
+
+.page-header-testimonials > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Styling for testimonial cards within the testimonials-content section */
+#testimonials-content .card {
+    border-radius: 15px; /* Rounded corners for the cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures content respects border-radius */
+}
+
+#testimonials-content .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+#testimonials-content .card-body {
+    padding: 25px; /* Ample padding inside the card */
+}
+
+#testimonials-content .card-title {
+    font-size: 1.5rem; /* Larger title for client names */
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+#testimonials-content .text-muted {
+    font-size: 0.9em; /* Smaller text for client details */
+}
+
+#testimonials-content .card-text.fst-italic {
+    font-size: 1.1em; /* Slightly larger, italicized quote text */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+#testimonials-content .text-warning .fas {
+    color: #ffc107; /* Ensures stars are the warning yellow color */
+    margin: 0 2px; /* Small space between stars */
+}
+
+/* Styling for the client avatar in testimonial cards */
+#testimonials-content .card img.rounded-circle {
+    border: 3px solid #ffc107; /* Yellow border for avatar */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow for avatar */
+}
+
+/* Ensure general page header styles (for other pages like About Us) are also present */
+.page-header {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 40vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.page-header > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Also ensure your general body, navbar, footer, etc., styles are present. */
+/* Example: */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 56px; /* Adjust for fixed-top navbar height */
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffc107 !important;
+}
+
+/* ... (Include all other general styles from your style.css as provided previously) ... */
+
+/* Ensure the .llm-suggestions-box styles are also correctly in your style.css */
+.llm-suggestions-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e6ea;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #555;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.llm-suggestions-box.loading {
+    border-color: #007bff;
+}
+.llm-suggestions-box.loading::before {
+    content: "Thinking...";
+    color: #007bff;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Homepage specific LLM box override */
+#design-inspiration .llm-suggestions-box {
+    background-color: #ffffff;
+    color: #333;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Map specific styling (for contact.html) */
+.map-container {
+    height: 400px;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Styling for bigger and more spacious social icons (for contact.html) */
+#contact-content .list-unstyled.d-flex .fab {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+footer .list-unstyled a .fab {
+     font-size: 2rem;
+}
+
+
+/* --- Page Transition: Slide-In from Left with Fade --- */
+@keyframes slideInFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px); /* Start 50px to the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+body {
+    animation: slideInFade 0.7s ease-out; /* Apply the new animation over 0.7 seconds */
+    /* Ensure no default transitions interfere if they were set elsewhere for body */
+}

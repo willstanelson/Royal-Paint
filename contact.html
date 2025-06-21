@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Royal Finishers</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS (Your main styling file) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts (CDN) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlalDLsXzL3h5S02h4W2O9pXQ5lXyFf2xG4Z5J5R5O5F5+0N5J5P5K5I5L5M5N5O5Q5R5S5T5U5V5W5X5Y5Z5a5b5c5d5e5f5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- Navbar: Consistent navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Royal Finishers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <!-- Services Link - Now a direct link, no dropdown -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning" href="#" id="navbarQuoteBtn">Get a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header: Specific header for the Contact page -->
+    <section class="page-header-contact text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Get in Touch</h1>
+            <p class="lead mb-0">We're here to answer your questions and help you start your project.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information & Form Section - WRAPPED FOR MODAL -->
+    <div id="contactPageContent">
+        <section id="contact-content" class="py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Contact Information Column -->
+                    <div class="col-lg-5">
+                        <h2 class="fw-bold mb-4">Reach Out to Royal Finishers</h2>
+                        <p class="mb-4">
+                            Whether you have a question about our services, need a free quote, or just want to connect,
+                            we're ready to assist you. Fill out the form or use the contact details below.
+                        </p>
+
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-phone-alt fa-2x text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">Phone Numbers:</h5>
+                                <p class="mb-0">07089532159</p>
+                                <p class="mb-0">08058350357</p>
+                                <p class="mb-0">09056984156</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-envelope fa-2x text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">Email Address:</h5>
+                                <p class="mb-0">festusogheneakpohobor44@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">Our Location:</h5>
+                                <p class="mb-0">[Your Full Business Address Here]</p>
+                                <p class="mb-0 small text-muted">Operating Hours: Mon - Fri: 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+
+                        <h5 class="fw-bold mt-5 mb-3">Connect With Us:</h5>
+                        <ul class="list-unstyled d-flex">
+                            <li class="me-3"><a href="#" class="text-dark" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="me-3"><a href="#" class="text-dark" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li class="me-3"><a href="https://wa.me/2347089532159" class="text-dark" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                            <li class="me-3"><a href="#" class="text-dark" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="me-3"><a href="#" class="text-dark" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Form Column (LLM feature added here) -->
+                    <div class="col-lg-7">
+                        <h2 class="fw-bold mb-4">Send Us a Message</h2>
+                        <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control rounded-pill" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control rounded-pill" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                <input type="tel" class="form-control rounded-pill" id="phone" name="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="serviceType" class="form-label">Service of Interest</label>
+                                <select class="form-select rounded-pill" id="serviceType" name="serviceType" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>Painting Services</option>
+                                    <option>Interior & Exterior Design</option>
+                                    <option>Wallpaper Installation</option>
+                                    <option>Wall Screeding & P.O.P.</option>
+                                    <option>House/Industrial Cleaning</option>
+                                    <option>Fumigation Services</option>
+                                    <option>Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control rounded-3" id="message" name="message" rows="5" required></textarea>
+                                <button type="button" class="btn btn-outline-secondary btn-sm mt-2" id="enhanceMessageBtn">✨ Enhance My Message</button>
+                                <div id="llm-suggestions" class="llm-suggestions-box mt-2 d-none"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg mt-3 rounded-pill w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Map Section (Excluded from modal as it's typically a full-page feature) -->
+        <section id="map-section" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-4">Find Us on the Map</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3106195861787!2d3.350645614770697!3d6.586177995252876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92f7e7f6d9e1%3A0x6b77b7d0a21d51b3!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1678912345678!5m2!1sen!2sus"
+                            class="map-container"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <p class="text-center mt-3 text-muted small">Please note: This is a placeholder map. Replace with your actual business location embed code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> <!-- End contactPageContent wrapper -->
+
+    <!-- Footer: Consistent with other pages -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-warning">Royal Finishers</h5>
+                    <p class="small mb-0">Transforming spaces, delighting clients.</p>
+                    <p class="small mb-0">Nigeria</p>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <ul class="list-unstyled d-flex justify-content-center m-0">
+                        <li class="mx-2"><a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="mx-2"><a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mx-2"><a href="https://wa.me/2347089532159" class="text-white" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="mx-2"><a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mx-2"><a href="#" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="small mb-0">Contact: <br> 07089532159, 08058350357, 09056984156</p>
+                    <p class="small mb-0">Email: festusogheneakpohobor44@gmail.com</p>
+                    <p class="small mb-0">&copy; <span id="currentYearFooter"></span> Royal Finishers. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
